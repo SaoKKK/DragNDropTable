@@ -10,10 +10,11 @@
 
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
+
+@synthesize tableData;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -21,6 +22,15 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (id)init{
+    self = [super init];
+    if (self) {
+        //テーブル表示データ初期化
+        tableData = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"myArray" ofType:@"array"]];
+    }
+    return self;
 }
 
 @end

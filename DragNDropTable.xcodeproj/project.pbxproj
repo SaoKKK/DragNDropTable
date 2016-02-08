@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9041AE51C68274F0047557E /* myArray.array in Resources */ = {isa = PBXBuildFile; fileRef = B9041AE41C68274F0047557E /* myArray.array */; };
 		B9917ACB1C67F13800CCFC56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9917ACA1C67F13800CCFC56 /* AppDelegate.m */; };
 		B9917ACE1C67F13800CCFC56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9917ACD1C67F13800CCFC56 /* main.m */; };
 		B9917AD01C67F13800CCFC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9917ACF1C67F13800CCFC56 /* Assets.xcassets */; };
 		B9917AD31C67F13800CCFC56 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9917AD11C67F13800CCFC56 /* MainMenu.xib */; };
+		B9917ADF1C680FE700CCFC56 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9917ADE1C680FE700CCFC56 /* TableController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9041AE41C68274F0047557E /* myArray.array */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = myArray.array; path = Resources/myArray.array; sourceTree = "<group>"; };
 		B9917AC61C67F13800CCFC56 /* DragNDropTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragNDropTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9917AC91C67F13800CCFC56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9917ACA1C67F13800CCFC56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -21,6 +24,8 @@
 		B9917ACF1C67F13800CCFC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9917AD21C67F13800CCFC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B9917AD41C67F13800CCFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9917ADD1C680FE700CCFC56 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
+		B9917ADE1C680FE700CCFC56 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9041AE11C68269A0047557E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9041AE41C68274F0047557E /* myArray.array */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B9917ABD1C67F13700CCFC56 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +70,10 @@
 				B9917ACA1C67F13800CCFC56 /* AppDelegate.m */,
 				B9917ACF1C67F13800CCFC56 /* Assets.xcassets */,
 				B9917AD11C67F13800CCFC56 /* MainMenu.xib */,
+				B9917ADD1C680FE700CCFC56 /* TableController.h */,
+				B9917ADE1C680FE700CCFC56 /* TableController.m */,
 				B9917AD41C67F13800CCFC56 /* Info.plist */,
+				B9041AE11C68269A0047557E /* Resources */,
 				B9917ACC1C67F13800CCFC56 /* Supporting Files */,
 			);
 			path = DragNDropTable;
@@ -130,6 +146,7 @@
 			files = (
 				B9917AD01C67F13800CCFC56 /* Assets.xcassets in Resources */,
 				B9917AD31C67F13800CCFC56 /* MainMenu.xib in Resources */,
+				B9041AE51C68274F0047557E /* myArray.array in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9917ADF1C680FE700CCFC56 /* TableController.m in Sources */,
 				B9917ACE1C67F13800CCFC56 /* main.m in Sources */,
 				B9917ACB1C67F13800CCFC56 /* AppDelegate.m in Sources */,
 			);
@@ -195,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -232,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -245,6 +263,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DragNDropTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = Sao.DragNDropTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -257,6 +276,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DragNDropTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = Sao.DragNDropTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -281,6 +301,7 @@
 				B9917AD91C67F13800CCFC56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
